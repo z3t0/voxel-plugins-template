@@ -5,6 +5,11 @@ module.exports = function(game, opts) {
   return new FooPlugin(game, opts);
 };
 
+
+module.exports.pluginInfo = {
+  loadAfter: []
+};
+
 function FooPlugin(game, opts) {
   // Functionality of plugin
 
